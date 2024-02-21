@@ -76,6 +76,8 @@ Na página do endpoint, vá até a guia **Teste** para realizar uma previsão de
 ```
 ### Resultado
 
+Seguindo todos os passos que a documentação manda chegamos no seguinte resultado
+
 ```json
 {
   "Results": [
