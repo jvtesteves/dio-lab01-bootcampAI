@@ -38,43 +38,7 @@ O projeto foca na tarefa de regressão com o objetivo de prever o número de alu
   - Tipo de Validação: Divisão de Validação de Trem
   - Porcentagem de Dados de Validação: 10%
 
-## Implementação e Uso dos Pontos de Extremidade
-
-Após o treinamento e a avaliação do modelo no Azure Machine Learning, o modelo foi disponibilizado através de um ponto de extremidade em tempo real. Para utilizar este modelo e fazer previsões sobre o número de aluguéis de bicicletas, siga os passos abaixo:
-
-### Acessando o Ponto de Extremidade
-
-1. No **Estúdio Azure Machine Learning**, no menu esquerdo, selecione **Endpoints**.
-2. Abra o ponto de extremidade em tempo real chamado **previsão de aluguéis**.
-
-### Testando o Ponto de Extremidade
-
-Na página do endpoint, vá até a guia **Teste** para realizar uma previsão de teste. Use o seguinte modelo JSON como dados de entrada para testar o endpoint:
-
-```json
-{
-  "Inputs": { 
-    "data": [
-      {
-        "day": 1,
-        "mnth": 1,   
-        "year": 2022,
-        "season": 2,
-        "holiday": 0,
-        "weekday": 1,
-        "workingday": 1,
-        "weathersit": 2, 
-        "temp": 0.3, 
-        "atemp": 0.3,
-        "hum": 0.3,
-        "windspeed": 0.3 
-      }
-    ]    
-  },   
-  "GlobalParameters": {}
-}
-```
-### Resultado
+### Resultado do teste de pontos de extremidade
 
 Seguindo todos os passos que a documentação manda chegamos no seguinte resultado
 
